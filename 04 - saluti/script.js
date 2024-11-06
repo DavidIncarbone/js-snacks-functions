@@ -8,7 +8,7 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 
-function helloPeople(name) {
+function helloName(name) {
 
     const helloInsertedName = `Ciao ${name}!`
     return helloInsertedName
@@ -17,8 +17,15 @@ function helloPeople(name) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const helloInsertedName = helloPeople(name);
+const helloInsertedName = helloName(name);
 console.log(helloInsertedName);
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+// arrow function
+
+
+
+const printHello = (name) => console.log("Ciao " + name);
+printHello(name);

@@ -26,10 +26,16 @@ function firstLetter(myArray) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const initialNames = firstLetter(names);
-console.log(initialNames);
+// const initialNames = firstLetter(names);
+// console.log(initialNames);
 
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// Arrow Function
+const initialNames = [];
+names.filter((name) => initialNames.push(name[0]));
+console.log(initialNames);
+
 

@@ -32,7 +32,19 @@ function stringArray(myArray, text) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const choicedArray = stringArray(names, "A");
-console.log(choicedArray);
+// const choicedArray = stringArray(names, "A");
+// console.log(choicedArray);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+// Arrow Function
+
+
+const text = "A";
+const choicedArray = names.filter((name) => name[0] === text);
+console.log(choicedArray);
+
+
+
+
+
